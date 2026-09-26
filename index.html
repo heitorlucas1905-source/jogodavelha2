@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jogo da Velha — 3 Jogadores</title>
+<script src="script.js" defer></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Jogo da Velha — 3 Jogadores</h1>
+    <p>Tabuleiro 4×4 · X, Bola e Triângulo</p>
+  </header>
+
+  <div class="board-panel">
+    <div class="status" id="status"></div>
+
+    <div class="board" id="board"></div>
+
+    <div class="scorebar" id="scorebar"></div>
+
+    <div class="controls">
+      <button class="reset" id="resetBtn">Reiniciar partida</button>
+    </div>
+  </div>
+
+  <div class="rules">
+    <h2>Como funciona</h2>
+    <ol>
+      <li>O tabuleiro tem 16 casas (4 linhas por 4 colunas), em vez das 9 casas do jogo da velha tradicional, para caber três jogadores.</li>
+      <li>Os jogadores se revezam na ordem: primeiro o <strong>X</strong>, depois a <strong>Bola</strong>, depois o <strong>Triângulo</strong> — e o ciclo se repete até o fim da partida.</li>
+      <li>Na sua vez, clique em uma casa vazia para marcá-la com o seu símbolo.</li>
+      <li>Vence quem conseguir alinhar <strong>4 símbolos iguais seguidos</strong>, na horizontal, na vertical ou na diagonal.</li>
+      <li>Se as 16 casas forem preenchidas e ninguém completar uma linha de 4, a partida termina empatada.</li>
+      <li>Use o botão "Reiniciar partida" para limpar o tabuleiro e jogar novamente, mantendo o placar de vitórias.</li>
+    </ol>
+
+    <div class="legend">
+      <div class="legend-item"><span class="mark">${MARK_X}</span> Jogador 1</div>
+      <div class="legend-item"><span class="mark">${MARK_O}</span> Jogador 2</div>
+      <div class="legend-item"><span class="mark">${MARK_T}</span> Jogador 3</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
